@@ -1,10 +1,17 @@
+body{
+  background-color: rgba(240,128,128,0.5);
+  font-family: 'Arial', sans-serif;
+}
 .container {
   display: flex;
   flex-direction: column;
   margin: auto;
   margin-top: 70px;
-  background: #fff;
   padding-bottom: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .header {
   display: flex;
@@ -24,7 +31,7 @@ img {
   height: 40px;
 }
 .underline {
-  width: 61px;
+  width: 70px;
   height: 6px;
   background: rgb(240,128,128);
   border-radius: 9px;
@@ -34,6 +41,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  
 }
 .input {
   display: flex;
@@ -97,4 +105,19 @@ span {
   border: 2px solid gray;
   width: 600px;
   height: 550px;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 0 15px;
+    width: 80%;
+  }
+
+  .inputs .input{
+    width: 80%;
+    padding: 15px;
+  }
+
+  .header .text {
+    font-size: 5 rem;
+  }
 }
