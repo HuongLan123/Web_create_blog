@@ -10,12 +10,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 const routes = (
   <Router>
     <Routes>
-      <Route path="/" exact element={<Home />} />
+      <Route path="/" exact element={<Navbar1 />} />
       <Route path="/pages" exact element={<Navbar />} />
       <Route path="/login" exact element={<Login />} />
       <Route path="/signup" exact element={<Signup />} />
       <Route path="/info" exact element={<ProfileInfo />} />
-      <Route path="/post" exact element={<Navbar1 />} />
+
     </Routes>
   </Router>
 );
