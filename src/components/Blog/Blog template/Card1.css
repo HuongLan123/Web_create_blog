@@ -1,0 +1,57 @@
+.card1-container {
+  background-color: rgb(240, 128, 128);
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card1-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card1-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.card1-date {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.card1-content {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.card1-tags {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+}
+
+.icon-group {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-btn {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icon-btn:hover {
+  color: #ffd700;
+}
+
+.pinned {
+  color: gold;
+}
+
+.unpinned {
+  color: rgba(255, 255, 255, 0.6);
+}
