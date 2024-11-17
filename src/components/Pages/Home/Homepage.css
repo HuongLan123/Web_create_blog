@@ -1,0 +1,136 @@
+/* HomePage.css */
+.home-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgb(240, 128, 128), rgb(255, 182, 193)); /* Gradient nền */
+  color: white;
+  animation: fadeIn 1.5s ease-out;
+  position: relative;
+}
+
+.home-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://www.example.com/images/blog-background.jpg'); /* Thêm hình ảnh background */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: -1; /* Đặt hình nền phía dưới các phần tử khác */
+}
+
+.home-content {
+  text-align: center;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1); /* Màu nền mờ */
+  border-radius: 15px;
+  max-width: 650px;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.app-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  animation: fadeInTitle 1.5s ease-out forwards;
+}
+
+.app-description {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  animation: fadeInDescription 1.5s ease-out forwards;
+  animation-delay: 1s;
+}
+
+/* Thêm icon vào nút "Get Started" */
+.get-started-btn {
+  padding: 15px 25px;
+  background: rgb(255, 99, 71); /* Màu cam sáng cho nút */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background: rgb(240, 128, 128); /* Đổi màu khi hover */
+  transform: scale(1.1);
+}
+
+/* Thêm icon vào nút */
+.get-started-btn i {
+  margin-right: 10px;
+}
+
+/* Các hình ảnh và icon blog */
+.blog-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+  animation: scaleUp 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDescription {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
