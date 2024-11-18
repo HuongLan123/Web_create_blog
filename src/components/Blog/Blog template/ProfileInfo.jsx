@@ -1,6 +1,6 @@
 import React from 'react'
-import 'C:/Program Files/Sublime Text/Web_blog/frontend/src/components/Pages/Home/navbar.css'
-import {getInitials} from 'C:/Program Files/Sublime Text/Web_blog/frontend/src/components/Blog/edit.js'
+import '../../Pages/Home/navbar.css'
+import {getInitials} from '../edit.js'
 const ProfileInfo = ()=>{
 	return(
 		<div className="flex items-center gap-3">
