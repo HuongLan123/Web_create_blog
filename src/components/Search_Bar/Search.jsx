@@ -1,8 +1,7 @@
 import React from "react";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
-import "C:/Program Files/Sublime Text/Web_blog/frontend/src/components/Pages/Home/navbar.css";
-
+import "../Pages/Home/navbar.css";
 const Search = ({ value = "", onChange, handleSearch, onClearSearch }) => {
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
