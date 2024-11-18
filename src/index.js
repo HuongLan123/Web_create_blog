@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import 'C:/Program Files/Sublime Text/Web_blog/frontend/src/utils/index.css';
+import './utils/index.css';
 import App from './utils/App';
 import reportWebVitals from './reportWebVitals';
 
