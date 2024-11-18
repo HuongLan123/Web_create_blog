@@ -1,11 +1,12 @@
 import React from 'react';
-import Home from 'C:/Program Files/Sublime Text/Web_blog/frontend/src/components/Pages/Home/Home.jsx';
-import Navbar from 'C:/Program Files/Sublime Text/Web_blog/frontend/src/components/Pages/Home/navbar.jsx';
-import Login from 'C:/Program Files/Sublime Text/Web_blog/frontend/src/components/Pages/Login/login.jsx';
-import Signup from 'C:/Program Files/Sublime Text/Web_blog/frontend/src/components/Pages/Signup/signup.jsx';
-import ProfileInfo from 'C:/Program Files/Sublime Text/Web_blog/frontend/src/components/Blog/Blog template/ProfileInfo.jsx';
-import Navbar1 from 'C:/Program Files/Sublime Text/Web_blog/frontend/src/components/Pages/Home/Home1.jsx';
+import Home from '../components/Pages/Home/Home.jsx';
+import Navbar from '../components/Pages/Home/navbar.jsx';
+import Login from '../components/Pages/Login/login.jsx';
+import Signup from '../components/Pages/Signup/signup.jsx';
+import ProfileInfo from '../components/Blog/Blog template/ProfileInfo.jsx';
+import Navbar1 from '../components/Pages/Home/Home1.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from '../components/Pages/Home/Homepage.jsx'; 
 
 const routes = (
   <Router>
