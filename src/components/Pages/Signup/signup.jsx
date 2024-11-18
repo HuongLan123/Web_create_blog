@@ -4,7 +4,7 @@ import email_icon from "../../Assets/email.webp";
 import password_icon from "../../Assets/password.png";
 import Validation1 from './signupValidation';
 import axios from 'axios';
-import "C:/Program Files/Sublime Text/Web_blog/frontend/src/components/Pages/login-signup.css";
+import "../login-signup.css";
 
 const Signup = () => {
   const [values, setValues] = useState({
